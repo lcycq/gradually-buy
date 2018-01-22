@@ -1,0 +1,167 @@
+@charset "UTF-8";
+.M_header {
+  background-color: #f4483e;
+}
+.M_header #back {
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  display: block;
+  margin-left: 0.2rem;
+  float: left;
+}
+.M_header p {
+  width: 100%;
+  height: 100%;
+  margin: 0 1rem 0 1rem;
+  max-width: 12.8rem;
+  line-height: 1rem;
+  font-size: 0.44rem;
+  color: #fff;
+  text-align: center;
+}
+.M_main {
+  position: relative;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2.4rem;
+  background-color: #c9c9c9;
+}
+.M_main .header {
+  height: 1rem;
+  background-color: #fff;
+  position: relative;
+}
+.M_main .header .right {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  border-left: 1px solid #ccc;
+  line-height: 0.96rem;
+  text-align: center;
+  background-color: #fff;
+}
+.M_main .header .left {
+  height: 1rem;
+  line-height: 1rem;
+  position: relative;
+}
+.M_main .header .left li {
+  float: left;
+  width: 1.4rem;
+  height: 100%;
+  text-align: center;
+}
+.M_main .header .left li a {
+  display: inline-block;
+  height: 100%;
+  font-size: 0.3rem;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.M_main .header .left li a.active {
+  border-bottom: 2px solid red;
+  color: red;
+}
+.M_main .header .left .hid {
+  overflow: hidden;
+}
+.M_main .header .left .mui-scroll {
+  width: 19rem;
+}
+.M_main .content li {
+  width: 100%;
+  height: 3.6rem;
+  margin: 0.2rem 0;
+  background-color: #fff;
+  position: relative;
+}
+.M_main .content li img {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+}
+.M_main .content li .by {
+  position: absolute;
+  left: 3rem;
+  top: 0.2rem;
+  color: #000;
+}
+.M_main .content li .qh {
+  position: absolute;
+  left: 3rem;
+  top: 1rem;
+}
+.M_main .content li .qh span:first-of-type {
+  color: #f4483e;
+  font-size: 0.4rem;
+}
+.M_main .content li .qh span:nth-of-type(2) {
+  color: #f4483e;
+  font-size: 0.6rem;
+}
+.M_main .content li .qh span:nth-of-type(3) {
+  text-decoration: line-through;
+  padding-left: 0.2rem;
+}
+.M_main .content li .bfb {
+  width: 2.2rem;
+  height: 0.4rem;
+  border: 1px solid #f4483e;
+  border-radius: 0.2rem;
+  background-color: #ffb7b7;
+  position: absolute;
+  left: 3rem;
+  top: 2.1rem;
+}
+.M_main .content li .bfb i {
+  display: block;
+  width: 0.36rem;
+  height: 0.36rem;
+  background-color: #f4483e;
+  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+}
+.M_main .content li .bfb span {
+  position: absolute;
+  left: 0.9rem;
+  top: -0.1rem;
+  font-size: 0.1rem;
+  color: #fff;
+}
+.M_main .content li > span {
+  position: absolute;
+  left: 5.4rem;
+  top: 2rem;
+  font-size: 0.3rem;
+  color: #f4483e;
+}
+.M_main .content li .dc {
+  width: 2.8rem;
+  height: 0.52rem;
+  border: 1px dashed #f4483e;
+  position: absolute;
+  left: 3rem;
+  bottom: 0.32rem;
+  font-size: 0.14rem;
+  text-align: center;
+}
+.M_main .content li .xd {
+  width: 1.7rem;
+  height: 0.76rem;
+  background-color: #f4483e;
+  color: #fff;
+  line-height: 0.84rem;
+  text-align: center;
+  font-size: 0.3rem;
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
+  border-radius: 0.1rem;
+}

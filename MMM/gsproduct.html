@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./js/fontsize.js"></script>
+    <link rel="stylesheet" href="./libs/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./libs/pagenation/pagination.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/gsproduct.css">
+    <title>凑单品</title>
+</head>
+<body>
+<!--MMM头部-->
+<div class="M_header">
+    <a href="javascript: history.go(-1);" class="mui-icon mui-icon-back" id="back"></a>
+    <p>凑单品</p>
+    <div class="app">
+        <img src="./images/header_app.png">
+    </div>
+</div>
+
+
+
+<!--MMM主体部分-->
+<div class="M_main">
+
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <!--头部-->
+            <div class="header">
+                <div class="right">
+                    <span class="mui-icon mui-icon-search"></span>
+                </div>
+                <div class="left">
+                   <ul class="clearfix first">
+                       <li class="a">
+                           <span>京东</span>▲
+                       </li>
+                       <li class="b">
+                           <span>华北</span>▲
+                       </li>
+                       <li class="c">
+                           <span>全部价格</span>▲
+                       </li>
+                   </ul>
+                </div>
+                <ul class="shop hd">
+                    <li>京东<span class="mui-icon mui-icon-checkmarkempty"></span></li>
+                    <li>一号店</li>
+                    <li>天猫超市</li>
+                </ul>
+                <ul class="area hd">
+                    <li>华</li>
+                    <li>华东</li>
+                    <li>江南</li>
+                </ul>
+                <ul class="price hd">
+                    <li>全部价格<span class="mui-icon mui-icon-checkmarkempty"></span></li>
+                </ul>
+            </div>
+            <!--主体内容-->
+            <div class="content">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="./images/mnav.jpg" alt="">
+                            <p>廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+                            <div>¥0.50</div>
+                            <button>去凑单</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/mnav.jpg" alt="">
+                            <p>廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+                            <div>¥0.50</div>
+                            <button>去凑单</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/mnav.jpg" alt="">
+                            <p>廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+                            <div>¥0.50</div>
+                            <button>去凑单</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MMM底部-->
+<div class="M_footer">
+    <div class="login">
+        <a href="#">登录</a>
+    </div>
+    <div class="register">
+        <a href="#">注册</a>
+    </div>
+    <div class="toTop">
+        <a href="#"><span class="mui-icon mui-icon-arrowup"></span>返回顶部</a>
+    </div>
+    <p class="last">
+        <span>手机APP下载&nbsp;</span>慢慢买手机版--掌上比价平台
+    <p>m.manmanbuy.com</p>
+    </p>
+</div>
+
+</body>
+</html>
+<script src="./libs/jquery/jquery-1.12.4.js"></script>
+<script src="./libs/artTemplate/template-web.js"></script>
+<script src="./libs/mui/js/mui.min.js"></script>
+<script src="./libs/pagenation/jquery.pagination.js"></script>
+<script src="./js/comment.js"></script>
+<script src="./js/gsproduct.js"></script>
+
+<!--列表模板-->
+<script type="text/html" id="tplS">
+    {{each result v i}}
+    <li data-id="{{v.shopId}}">{{v.shopName}}<span class="{{v.shopName == '京东'?'mui-icon mui-icon-checkmarkempty':''}}"></span></li>
+    {{/each}}
+</script>
+<script type="text/html" id="tplA">
+    {{each result v i}}
+    <li data-id="{{v.areaId}}">{{v.areaName}}<span class="{{v.areaName == '华北（北京、山西等）'? 'mui-icon mui-icon-checkmarkempty':''}}"></span></li>
+    {{/each}}
+</script>
+
+
+<!--主要内容模板-->
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+    <li>
+        <a href="#">
+            <img src="{{v.productImg}}" alt="">
+            <p>{{v.productName}}</p>
+            <div>{{v.productPrice}}</div>
+            <button>去凑单</button>
+        </a>
+    </li>
+    {{/each}}
+</script>

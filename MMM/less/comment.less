@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ol, ul {
+  list-style: none;
+}
+input, select, form image, button {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+textarea {
+  width: 95%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+ul, ol, li {
+  list-style: none;
+}
+em, i {
+  font-style: normal;
+}
+img {
+  border: none;
+  display: block;
+}
+input,
+img {
+  vertical-align: middle;
+}
+html,body {
+  height: 100%;
+  background-color: #fff;
+}
+
+//头部
+.M_header {
+  height: 50rem/50;
+  width: 100%;
+  background-color: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  .logo {
+    position: absolute;
+    left: 11rem/50;
+    top: 11rem/50;
+    img {
+      height: 25rem/50;
+    }
+  }
+  .app {
+    position: absolute;
+    right: 11rem/50;
+    top: 6rem/50;
+    img {
+      height: 34rem/50;
+    }
+  }
+}
+.M_main {
+  position: relative;
+  height: 100%;
+  margin-top: 50rem/50;
+  margin-bottom: 120rem/50;
+  background-color: #fff;
+}
+//底部部分
+.M_footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #9E9E9E;
+  height: 120rem/50;
+  width: 100%;
+  z-index: 999;
+  div {
+    width: 33.33%;
+    border: 1px solid #ccc;
+    height: 35rem/50;
+    float: left;
+    margin-bottom: 25rem/50;
+    a {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      line-height: 35rem/50;
+      font-size: 16rem/50;
+      text-align: center;
+      font-size: 14rem/50;
+    }
+  }
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 14rem/50;
+    color: #000;
+  }
+  .last {
+    text-align: center;
+    color: #000;
+    span {
+      color: red;
+      font-size: 14rem/50;
+    }
+  }
+
+}

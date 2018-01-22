@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./js/fontsize.js"></script>
+    <link rel="stylesheet" href="./libs/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./libs/pagenation/pagination.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/sitenav.css">
+    <title>商城导航</title>
+</head>
+<body>
+<!--MMM头部-->
+<div class="M_header">
+    <a href="javascript: history.go(-1);" class="mui-icon mui-icon-back" id="back"></a>
+    <p>商城导航</p>
+    <div class="app">
+        <img src="./images/header_app.png">
+    </div>
+</div>
+
+<!--MMM主体部分-->
+<div class="M_main">
+
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <div class="content">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="images/slogo.png" alt="">
+                            <span>京东商城</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/slogo.png" alt="">
+                            <span>京东商城</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/slogo.png" alt="">
+                            <span>京东商城</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/slogo.png" alt="">
+                            <span>京东商城</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MMM底部-->
+<div class="M_footer">
+    <div class="login">
+        <a href="#">登录</a>
+    </div>
+    <div class="register">
+        <a href="#">注册</a>
+    </div>
+    <div class="toTop">
+        <a href="#"><span class="mui-icon mui-icon-arrowup"></span>返回顶部</a>
+    </div>
+    <p class="last">
+        <span>手机APP下载&nbsp;</span>慢慢买手机版--掌上比价平台
+    <p>m.manmanbuy.com</p>
+    </p>
+</div>
+
+</body>
+</html>
+<script src="./libs/jquery/jquery-1.12.4.js"></script>
+<script src="./libs/artTemplate/template-web.js"></script>
+<script src="./libs/mui/js/mui.min.js"></script>
+<script src="./libs/pagenation/jquery.pagination.js"></script>
+<script src="./js/comment.js"></script>
+<script src="./js/sitenav.js"></script>
+
+<!--主体内容模板-->
+<script type="text/html" id="tpl">
+    {{each result v i}}
+        <li>
+            <a href="{{v.navHref}}">
+                <img src="{{v.navImg}}" alt="">
+                <span>{{v.navTitle}}</span>
+            </a>
+        </li>
+    {{/each}}
+</script>
+
+
+

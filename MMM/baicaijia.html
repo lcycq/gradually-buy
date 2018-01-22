@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./js/fontsize.js"></script>
+    <link rel="stylesheet" href="./libs/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./libs/pagenation/pagination.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/baicaijia.css">
+    <title>白菜价-淘宝内部券</title>
+</head>
+<body>
+<!--MMM头部-->
+<div class="M_header">
+    <a href="javascript: history.go(-1);" class="mui-icon mui-icon-back" id="back"></a>
+    <p>白菜价-淘宝内部券</p>
+    <div class="app">
+        <img src="./images/header_app.png">
+    </div>
+</div>
+
+
+
+<!--MMM主体部分-->
+<div class="M_main">
+
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <!--头部-->
+            <div class="header">
+                <div class="right">
+                    <span class="mui-icon mui-icon-search"></span>
+                </div>
+                <div class="left">
+                    <div class="hid">
+                        <div class="mui-scroll-wrapper1">
+                            <div class="mui-scroll">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="active">全部</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--主体内容-->
+            <div class="content">
+                <ul>
+                    <li>
+                        <img src="./images/productctrl.jpg" alt="">
+                        <p class="by">[包邮]传奇保罗男士V领针织毛衣衫</p>
+                        <p class="qh">
+                            <span>券后</span>
+                            <span>&yen;29.0</span>
+                            <span>&yen;89</span>
+                        </p>
+                        <div class="bfb">
+                            <i></i>
+                            <span>18%</span>
+                        </div>
+                        <span>已领3726张</span>
+                        <div class="dc">点此领80元优惠券</div>
+                        <div class="xd">下单链接</div>
+                    </li>
+                    <li>
+                        <img src="./images/productctrl.jpg" alt="">
+                        <p class="by">[包邮]传奇保罗男士V领针织毛衣衫</p>
+                        <p class="qh">
+                            <span>券后</span>
+                            <span>&yen;29.0</span>
+                            <span>&yen;89</span>
+                        </p>
+                        <div class="bfb">
+                            <i></i>
+                            <span>18%</span>
+                        </div>
+                        <span>已领3726张</span>
+                        <div class="dc">点此领80元优惠券</div>
+                        <div class="xd">下单链接</div>
+                    </li>
+                    <li>
+                        <img src="./images/productctrl.jpg" alt="">
+                        <p class="by">[包邮]传奇保罗男士V领针织毛衣衫</p>
+                        <p class="qh">
+                            <span>券后</span>
+                            <span>&yen;29.0</span>
+                            <span>&yen;89</span>
+                        </p>
+                        <div class="bfb">
+                            <i></i>
+                            <span>18%</span>
+                        </div>
+                        <span>已领3726张</span>
+                        <div class="dc">点此领80元优惠券</div>
+                        <div class="xd">下单链接</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MMM底部-->
+<div class="M_footer">
+    <div class="login">
+        <a href="#">登录</a>
+    </div>
+    <div class="register">
+        <a href="#">注册</a>
+    </div>
+    <div class="toTop">
+        <a href="#"><span class="mui-icon mui-icon-arrowup"></span>返回顶部</a>
+    </div>
+    <p class="last">
+        <span>手机APP下载&nbsp;</span>慢慢买手机版--掌上比价平台
+    <p>m.manmanbuy.com</p>
+    </p>
+</div>
+
+</body>
+</html>
+<script src="./libs/jquery/jquery-1.12.4.js"></script>
+<script src="./libs/artTemplate/template-web.js"></script>
+<script src="./libs/mui/js/mui.min.js"></script>
+<script src="./libs/pagenation/jquery.pagination.js"></script>
+<script src="./js/comment.js"></script>
+<script src="./js/baicaijia.js"></script>
+
+<!--列表模板-->
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li data-id="{{v.titleId}}" class="{{v.title=='全部'? 'qb':''}}"><a href="#">{{v.title}}</a></li>
+    {{/each}}
+</script>
+
+
+<!--主要内容模板-->
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+    <li>
+        <img src="./images/productctrl.jpg" alt="">
+        <p class="by">[包邮]传奇保罗男士V领针织毛衣衫</p>
+        <p class="qh">
+            <span>券后</span>
+            <span>&yen;29.0</span>
+            <span>&yen;89</span>
+        </p>
+        <div class="bfb">
+            <i></i>
+            <span>18%</span>
+        </div>
+        <span>已领3726张</span>
+        <div class="dc">点此领80元优惠券</div>
+        <div class="xd">下单链接</div>
+    </li>
+    {{/each}}
+</script>

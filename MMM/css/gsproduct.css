@@ -1,0 +1,138 @@
+@charset "UTF-8";
+.M_header {
+  background-color: #f4483e;
+}
+.M_header #back {
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  display: block;
+  margin-left: 0.2rem;
+  float: left;
+}
+.M_header p {
+  width: 100%;
+  height: 100%;
+  margin: 0 1rem 0 1rem;
+  max-width: 12.8rem;
+  line-height: 1rem;
+  font-size: 0.44rem;
+  color: #fff;
+  text-align: center;
+}
+.M_main {
+  position: relative;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2.4rem;
+  background-color: #c9c9c9;
+}
+.M_main .header {
+  height: 1rem;
+  background-color: #fff;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.M_main .header .right {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #ccc;
+  line-height: 0.96rem;
+  text-align: center;
+  background-color: #fff;
+}
+.M_main .header .left {
+  height: 1rem;
+  line-height: 1rem;
+  position: relative;
+  margin-right: 1rem;
+}
+.M_main .header .left .first > li {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  font-size: 0.3rem;
+}
+.M_main .header .shop,
+.M_main .header .area,
+.M_main .header .price {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  width: 100%;
+  z-index: 999;
+}
+.M_main .header .shop li,
+.M_main .header .area li,
+.M_main .header .price li {
+  height: 1rem;
+  background-color: #fff;
+  line-height: 1rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.32rem;
+  padding-left: 0.3rem;
+}
+.M_main .header .shop li span,
+.M_main .header .area li span,
+.M_main .header .price li span {
+  float: right;
+  display: block;
+  height: 100%;
+  line-height: 1rem;
+  margin-right: 0.2rem;
+  color: red;
+  font-size: 0.8rem;
+}
+.M_main .content {
+  padding: 0.3rem;
+}
+.M_main .content li {
+  width: 49%;
+  height: 5.2rem;
+  background-color: #fff;
+  float: left;
+  margin-bottom: 0.3rem;
+  padding-top: 0.1rem;
+  position: relative;
+}
+.M_main .content li img {
+  width: 3.5rem;
+  height: 3.4rem;
+  margin: 0 auto;
+}
+.M_main .content li p {
+  font-size: 0.3rem;
+  color: #000;
+  margin: 5px 0 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.M_main .content li div {
+  position: absolute;
+  left: 0.3rem;
+  bottom: 0.1rem;
+  color: #f8601d;
+}
+.M_main .content li button {
+  position: absolute;
+  right: 0.3rem;
+  bottom: 0.1rem;
+  border: 1px solid #ccc;
+  padding: 0.1rem 0.2rem;
+  background-color: #f8601d;
+  color: #fff;
+}
+.M_main .content li:nth-of-type(2n-1) {
+  margin-right: 2%;
+}
+.M_main .hd {
+  display: none;
+}

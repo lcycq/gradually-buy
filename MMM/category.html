@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./js/fontsize.js"></script>
+    <link rel="stylesheet" href="./libs/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <title>商品</title>
+</head>
+<body>
+<!--MMM头部-->
+<div class="M_header">
+    <div class="logo">
+        <a href="javascript: history.go(-1);">
+            <img src="./images/header_logo.png">
+        </a>
+    </div>
+    <div class="app">
+        <img src="./images/header_app.png">
+    </div>
+</div>
+
+<!--MMM主体部分-->
+<div class="M_main">
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <!--搜索-->
+            <div class="M_search">
+                <div class="btn">
+                    <button>搜索</button>
+                </div>
+                <div class="text">
+                    <input type="text" placeholder="请输入你想比价的商品">
+                </div>
+            </div>
+            <!--商品列表-->
+            <div class="M_product">
+                <ul class="first">
+                    <li class="clearfix">
+                        <span class="mui-pull-left">大家电</span>
+                        <i class="mui-icon mui-icon-arrowdown mui-pull-right"></i>
+                    </li>
+                    <ul class="sun clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--MMM底部-->
+<div class="M_footer">
+    <div class="login">
+        <a href="#">登录</a>
+    </div>
+    <div class="register">
+        <a href="#">注册</a>
+    </div>
+    <div class="toTop">
+        <a href="#"><span class="mui-icon mui-icon-arrowup"></span>返回顶部</a>
+    </div>
+    <p class="last">
+        <span>手机APP下载&nbsp;</span>慢慢买手机版--掌上比价平台
+    <p>m.manmanbuy.com</p>
+    </p>
+</div>
+
+</body>
+</html>
+<script src="./libs/jquery/jquery-1.12.4.js"></script>
+<script src="./libs/artTemplate/template-web.js"></script>
+<script src="./libs/mui/js/mui.min.js"></script>
+<script src="./js/comment.js"></script>
+<script src="./js/category.js"></script>
+
+<!--渲染模板1-->
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li data-id="{{v.titleId}}"  class="clearfix">
+        <span class="mui-pull-left">{{v.title}}</span>
+        <i class="mui-icon mui-icon-arrowdown mui-pull-right"></i>
+    </li>
+    <ul class="sun sun{{v.titleId}} clearfix dp">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    {{/each}}
+</script>
+
+<!--渲染模板2-->
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <a href="productList.html?categoryId={{v.categoryId}}&category={{v.category}}"><li data-id="{{v.categoryId}}">{{v.category}}</li></a>
+    {{/each}}
+</script>
+
+

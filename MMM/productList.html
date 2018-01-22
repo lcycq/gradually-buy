@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./js/fontsize.js"></script>
+    <link rel="stylesheet" href="./libs/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./libs/pagenation/pagination.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/productlist.css">
+    <title>商品列表</title>
+</head>
+<body>
+<!--MMM头部-->
+<div class="M_header">
+    <div class="logo">
+        <a href="javascript: history.go(-1);">
+            <img src="./images/header_logo.png">
+        </a>
+    </div>
+    <div class="app">
+        <img src="./images/header_app.png">
+    </div>
+</div>
+
+<!--MMM主体部分-->
+<div class="M_main">
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <!--搜索-->
+            <div class="M_search">
+                <div class="btn">
+                    <button>搜索</button>
+                </div>
+                <div class="text">
+                    <input type="text" placeholder="请输入你想比价的商品">
+                </div>
+            </div>
+            <!--搜索标题-->
+            <div class="M_title">
+                <a href="index.html">首页</a> >
+                <a href="#">全部分类</a> >
+                <a href="#">洗衣机</a> >
+                <div>筛选</div>
+            </div>
+            <!--搜索主体-->
+            <div class="M_content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/mnav.jpg" alt="">
+                            <p>移动端凑单品：海天 鲜味 生抽 1.28L</p>
+                            <div class="price">
+                                <span>&yen;694.00</span>
+                            </div>
+                            <div class="pl">
+                                <span>报价(4)</span>
+                                <span>评论(3512)</span>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <!--分页标签-->
+            <div class="Pagination">
+                <div id="Pagination" class="pagination"></div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!--MMM底部-->
+<div class="M_footer">
+    <div class="login">
+        <a href="#">登录</a>
+    </div>
+    <div class="register">
+        <a href="#">注册</a>
+    </div>
+    <div class="toTop">
+        <a href="#"><span class="mui-icon mui-icon-arrowup"></span>返回顶部</a>
+    </div>
+    <p class="last">
+        <span>手机APP下载&nbsp;</span>慢慢买手机版--掌上比价平台
+    <p>m.manmanbuy.com</p>
+    </p>
+</div>
+
+</body>
+</html>
+<script src="./libs/jquery/jquery-1.12.4.js"></script>
+<script src="./libs/artTemplate/template-web.js"></script>
+<script src="./libs/mui/js/mui.min.js"></script>
+<script src="./libs/pagenation/jquery.pagination.js"></script>
+<script src="./js/comment.js"></script>
+<script src="./js/productlist.js"></script>
+
+<!--主体内容模板-->
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li>
+    <a href="bijia.html?productid={{v.productId}}&productName={{v.brandName}}&category={{category}}">
+            {{@v.productImg}}
+            <p>{{v.productName}}</p>
+    <div class="price">
+            <span>{{v.productPrice}}</span>
+    </div>
+    <div class="pl">
+            <span>{{v.productQuote}}</span>
+            <span>{{v.productCom}}</span>
+            </div>
+    </a>
+    </li>
+    {{/each}}
+</script>
+
+
+

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+.M_header {
+  background-color: #f4483e;
+}
+.M_header #back {
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  display: block;
+  margin-left: 0.2rem;
+  float: left;
+}
+.M_header p {
+  width: 100%;
+  height: 100%;
+  margin: 0 1rem 0 1rem;
+  max-width: 12.8rem;
+  line-height: 1rem;
+  font-size: 0.44rem;
+  color: #fff;
+  text-align: center;
+}
+.M_main {
+  position: relative;
+  height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2.4rem;
+}
+.M_main .tip {
+  height: 0.8rem;
+}
+.M_main .tip p {
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  line-height: 0.8rem;
+  font-size: 0.34rem;
+}
+.M_main .content li {
+  height: 2.6rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.M_main .content li img {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+}
+.M_main .content li p:first-of-type {
+  position: absolute;
+  top: 0.3rem;
+  left: 2.4rem;
+  font-size: 0.32rem;
+  color: #000;
+  margin-bottom: 0;
+}
+.M_main .content li p:last-of-type {
+  position: absolute;
+  top: 1.3rem;
+  left: 2.4rem;
+  color: #000;
+  font-weight: bolder;
+}
+.M_main .content li .time {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 2.4rem;
+}
+.M_main .content li .time span {
+  font-size: 0.26rem;
+  color: #EE7700;
+}
+.M_main .content li .right {
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.M_mo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.M_mo .cha {
+  position: absolute;
+  top: 1.6rem;
+  right: 0.4rem;
+  color: #fff;
+  font-size: 1rem;
+}
+.M_mo.dp {
+  display: none;
+}
+.swiper-container {
+  width: 6rem;
+  height: 4rem;
+  margin: 3.6rem auto;
+  background-color: #fff;
+}
+.swiper-container img {
+  margin: 0 auto;
+  width: 6rem;
+  height: 4rem;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 38%;
+}
+.swiper-button-prev {
+  left: 2.5rem;
+}
+.swiper-button-next {
+  right: 2.5rem;
+}

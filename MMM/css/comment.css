@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+select,
+form image,
+button {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+textarea {
+  width: 95%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: none;
+  display: block;
+}
+input,
+img {
+  vertical-align: middle;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+.M_header {
+  height: 1rem;
+  width: 100%;
+  background-color: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.M_header .logo {
+  position: absolute;
+  left: 0.22rem;
+  top: 0.22rem;
+}
+.M_header .logo img {
+  height: 0.5rem;
+}
+.M_header .app {
+  position: absolute;
+  right: 0.22rem;
+  top: 0.12rem;
+}
+.M_header .app img {
+  height: 0.68rem;
+}
+.M_main {
+  position: relative;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2.4rem;
+  background-color: #fff;
+}
+.M_footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #9E9E9E;
+  height: 2.4rem;
+  width: 100%;
+  z-index: 999;
+}
+.M_footer div {
+  width: 33.33%;
+  border: 1px solid #ccc;
+  height: 0.7rem;
+  float: left;
+  margin-bottom: 0.5rem;
+}
+.M_footer div a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  line-height: 0.7rem;
+  font-size: 0.32rem;
+  text-align: center;
+  font-size: 0.28rem;
+}
+.M_footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.28rem;
+  color: #000;
+}
+.M_footer .last {
+  text-align: center;
+  color: #000;
+}
+.M_footer .last span {
+  color: red;
+  font-size: 0.28rem;
+}

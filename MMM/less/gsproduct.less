@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.M_header {
+  background-color: #f4483e;
+  #back {
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    display: block;
+    margin-left: 10rem/50;
+    float: left;
+  }
+  p {
+    width: 100%;
+    height: 100%;
+    margin: 0 50rem/50 0 1rem;
+    max-width: 640rem/50;
+    line-height: 1rem;
+    font-size: 22rem/50;
+    color: #fff;
+    text-align: center;
+  }
+}
+.M_main {
+  position: relative;
+  height: 100%;
+  margin-top: 50rem/50;
+  margin-bottom: 120rem/50;
+  background-color: #c9c9c9;
+  .header {
+    height: 50rem/50;
+    background-color: #fff;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    .right {
+      width: 50rem/50;
+      height: 50rem/50;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #ccc;
+      line-height: 48rem/50;
+      text-align: center;
+      background-color: #fff;
+    }
+    .left {
+      height: 1rem;
+      line-height: 1rem;
+      position: relative;
+      margin-right: 50rem/50;
+      .first {
+        >li {
+          float: left;
+          width: 33.33%;
+          height: 100%;
+          text-align: center;
+          border-right: 1px solid #ccc;
+          font-size: 15rem/50;
+        }
+      }
+    }
+    .shop,
+    .area,
+    .price{
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      width: 100%;
+      z-index: 999;
+      li {
+        height: 1rem;
+        background-color: #fff;
+        line-height: 1rem;
+        border-bottom: 1px solid #ccc;
+        font-size: 16rem/50;
+        padding-left: 15rem/50;
+        span {
+          float: right;
+          display: block;
+          height: 100%;
+          line-height: 1rem;
+          margin-right: 10rem/50;
+          color: red;
+          font-size: 40rem/50;
+        }
+      }
+    }
+  }
+  .content {
+    padding: 15rem/50;
+     li {
+       width: 49%;
+       height:260rem/50;
+       background-color: #fff;
+       float: left;
+       margin-bottom: 15rem/50;
+       padding-top: 5rem/50;
+       position: relative;
+       img {
+         width: 175rem/50;
+         height: 170rem/50;
+         margin: 0 auto;
+       }
+       p {
+         font-size: 15rem/50;
+         color: #000;
+         margin: 5px 0 0 0;
+         white-space:nowrap;
+         text-overflow:ellipsis;
+         overflow: hidden;
+       }
+       div {
+         position:absolute;
+         left: 15rem/50;
+         bottom: 5rem/50;
+         color: #f8601d;
+       }
+       button {
+         position: absolute;
+         right: 15rem/50;
+         bottom: 5rem/50;
+         border: 1px solid #ccc;
+         padding: 5rem/50 10rem/50;
+         background-color: #f8601d;
+         color: #fff;
+       }
+     }
+    li:nth-of-type(2n-1){
+      margin-right: 2%;
+    }
+  }
+  .hd {
+    display: none;
+  }
+}

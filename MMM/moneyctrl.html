@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./js/fontsize.js"></script>
+    <link rel="stylesheet" href="./libs/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./libs/pagenation/pagination.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+    <title>省钱控-最新优惠</title>
+</head>
+<body>
+<!--MMM头部-->
+<div class="M_header">
+    <a href="javascript: history.go(-1);" class="mui-icon mui-icon-back" id="back"></a>
+    <p>省钱控-最新优惠</p>
+    <div class="app">
+        <img src="./images/header_app.png">
+    </div>
+</div>
+
+<!--MMM主体部分-->
+<div class="M_main">
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <div class="M_discount">
+                <!--主体内容-->
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/mnav.jpg" alt="">
+                                <p>移动端凑单品：海天 鲜味 生抽 1.28L <span>10.9元</span></p>
+                                <div class="time">
+                                    <span>京东商城 | 10-25 14:10</span>
+                                </div>
+                            </a>
+                            <div class="pl">
+                                <i class="mui-icon mui-icon-bars">&nbsp;1</i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--分页标签-->
+                <div class="Pagination">
+                    <div id="Pagination" class="pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MMM底部-->
+<div class="M_footer">
+    <div class="login">
+        <a href="#">登录</a>
+    </div>
+    <div class="register">
+        <a href="#">注册</a>
+    </div>
+    <div class="toTop">
+        <a href="#"><span class="mui-icon mui-icon-arrowup"></span>返回顶部</a>
+    </div>
+    <p class="last">
+        <span>手机APP下载&nbsp;</span>慢慢买手机版--掌上比价平台
+    <p>m.manmanbuy.com</p>
+    </p>
+</div>
+
+</body>
+</html>
+<script src="./libs/jquery/jquery-1.12.4.js"></script>
+<script src="./libs/artTemplate/template-web.js"></script>
+<script src="./libs/mui/js/mui.min.js"></script>
+<script src="./libs/pagenation/jquery.pagination.js"></script>
+<script src="./js/comment.js"></script>
+<script src="./js/moneyctrl.js"></script>
+
+<!--打折商品模板-->
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <%var n = v.productComCount.split('')[1]%>
+    <li>
+        <a href="moneyproduct.html?productid={{v.productId}}">
+            {{@v.productImgSm}}
+            <p>{{v.productName}} <span>{{v.productPinkage}}</span></p>
+            <div class="time">
+                <span>{{v.productFrom}} | {{v.productTime}}</span>
+            </div>
+        </a>
+        <div class="pl">
+            <i class="mui-icon mui-icon-bars">&nbsp;{{n}}</i>
+        </div>
+    </li>
+    {{/each}}
+</script>
